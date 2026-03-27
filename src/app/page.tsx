@@ -141,7 +141,7 @@ export default function Home() {
               <h2 className="text-sm font-bold tracking-widest text-amber-600 uppercase mb-3">About Us</h2>
               <h3 className="text-4xl md:text-5xl font-black text-zinc-900 mb-6 tracking-tight font-serif">Built on Trust, <br />Driven by Quality.</h3>
               <p className="text-lg text-zinc-600 mb-8 leading-relaxed font-light">
-                Led by Wiley Jones, WYJ Logistics LLC brings years of trusted expertise to Atlanta's residential remodeling scene. We believe in doing the job right the first time, focusing on quality workmanship, clear communication, and lasting results.
+                Led by Wiley Jones, WYJ Logistics LLC brings years of trusted expertise to Atlanta&apos;s residential remodeling scene. We believe in doing the job right the first time, focusing on quality workmanship, clear communication, and lasting results.
               </p>
               
               <div className="space-y-6 mb-12">
@@ -184,7 +184,7 @@ export default function Home() {
           <FadeIn className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight font-serif">Ready to Transform <br/>Your Home?</h2>
             <p className="text-zinc-400 text-lg md:text-xl mb-12 font-light max-w-2xl mx-auto">
-              Contact us today for a free estimate. Let's discuss how our master craftsmanship can bring your vision to life.
+              Contact us today for a free estimate. Let&apos;s discuss how our master craftsmanship can bring your vision to life.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link

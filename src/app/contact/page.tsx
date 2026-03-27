@@ -24,7 +24,7 @@ export default function ContactPage() {
             {/* Contact Info */}
             <FadeIn direction="right" className="flex flex-col justify-center">
               <h2 className="font-sans uppercase text-xs tracking-[0.3em] font-light text-amber-600 mb-4">Get In Touch</h2>
-              <h3 className="font-serif text-4xl md:text-5xl font-medium uppercase tracking-widest text-zinc-900 mb-12 leading-tight">Let's Discuss Your Vision</h3>
+              <h3 className="font-serif text-4xl md:text-5xl font-medium uppercase tracking-widest text-zinc-900 mb-12 leading-tight">Let&apos;s Discuss Your Vision</h3>
               
               <div className="space-y-10 mb-16">
                 <div className="flex items-start group">

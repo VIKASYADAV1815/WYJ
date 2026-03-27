@@ -30,10 +30,10 @@ export default function AboutPage() {
                   WYJ Logistics LLC was founded by Wiley Jones with a simple yet powerful mission: to provide homeowners in Atlanta with remodeling services they can truly rely on.
                 </p>
                 <p>
-                  With extensive experience in residential construction and remodeling, Wiley understands that your home is your most valuable asset. That's why every project, from minor repairs to comprehensive structural renovations, is handled with meticulous attention to detail and a commitment to excellence.
+                  With extensive experience in residential construction and remodeling, Wiley understands that your home is your most valuable asset. That&apos;s why every project, from minor repairs to comprehensive structural renovations, is handled with meticulous attention to detail and a commitment to excellence.
                 </p>
                 <p>
-                  We believe that remodeling shouldn't be stressful. By maintaining open lines of communication, providing transparent pricing, and sticking to project timelines, we ensure a smooth and satisfying experience for every client.
+                  We believe that remodeling shouldn&apos;t be stressful. By maintaining open lines of communication, providing transparent pricing, and sticking to project timelines, we ensure a smooth and satisfying experience for every client.
                 </p>
               </div>
             </FadeIn>
@@ -48,7 +48,7 @@ export default function AboutPage() {
                 />
                 <div className="absolute -inset-4 border-2 border-zinc-900 -z-10 translate-x-4 translate-y-4 sm:translate-x-8 sm:translate-y-8" />
                 <div className="absolute bottom-4 -left-2 sm:bottom-8 sm:-left-8 bg-amber-500 p-4 sm:p-6 shadow-xl max-w-[200px] z-20">
-                  <p className="text-zinc-900 font-bold text-base sm:text-lg leading-tight">"We build it right the first time."</p>
+                  <p className="text-zinc-900 font-bold text-base sm:text-lg leading-tight">&quot;We build it right the first time.&quot;</p>
                 </div>
               </div>
             </FadeIn>

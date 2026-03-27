@@ -115,7 +115,7 @@ export default function ServicesPage() {
           <FadeIn>
             <h2 className="font-serif text-4xl md:text-5xl font-medium uppercase tracking-widest text-zinc-900 mb-8 leading-tight">Have a Project in Mind?</h2>
             <p className="text-xl md:text-2xl text-zinc-800 mb-12 font-light">
-              Let's discuss how we can improve your residential space. Reach out today for a free, no-obligation estimate.
+              Let&apos;s discuss how we can improve your residential space. Reach out today for a free, no-obligation estimate.
             </p>
             <Link
               href="/contact"
