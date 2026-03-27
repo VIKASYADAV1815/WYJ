@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { DM_Sans, Playfair_Display } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { MobileStickyCall } from "@/components/MobileStickyCall";
 import Script from "next/script";
 
-const sans = DM_Sans({ 
+const sans = Inter({ 
   subsets: ["latin"], 
   variable: "--font-sans",
   display: "swap",
 });
 
-const serif = Playfair_Display({ 
+const serif = Outfit({ 
   subsets: ["latin"], 
   variable: "--font-serif",
   display: "swap",

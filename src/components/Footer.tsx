@@ -18,7 +18,7 @@ export function Footer() {
             <p className="text-zinc-400 text-sm leading-relaxed mb-8 pr-4">
               Premium residential remodeling and structural services in Atlanta. We build trust through uncompromising quality and craftsmanship.
             </p>
-            <Link href="/contact" className="inline-flex items-center text-amber-500 font-semibold hover:text-amber-400 transition-colors group text-sm uppercase tracking-wider">
+            <Link href="#contact" className="inline-flex items-center text-amber-500 font-semibold hover:text-amber-400 transition-colors group text-sm uppercase tracking-wider">
               Start Your Project
               <ArrowRight className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -31,25 +31,25 @@ export function Footer() {
             </h3>
             <ul className="space-y-4">
               <li>
-                <Link href="/about" className="text-zinc-400 hover:text-amber-500 text-sm transition-colors flex items-center group">
+                <Link href="#about" className="text-zinc-400 hover:text-amber-500 text-sm transition-colors flex items-center group">
                   <span className="w-2 h-px bg-amber-500 mr-2 opacity-0 group-hover:opacity-100 transition-all"></span>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-zinc-400 hover:text-amber-500 text-sm transition-colors flex items-center group">
+                <Link href="#services" className="text-zinc-400 hover:text-amber-500 text-sm transition-colors flex items-center group">
                   <span className="w-2 h-px bg-amber-500 mr-2 opacity-0 group-hover:opacity-100 transition-all"></span>
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="text-zinc-400 hover:text-amber-500 text-sm transition-colors flex items-center group">
+                <Link href="#testimonials" className="text-zinc-400 hover:text-amber-500 text-sm transition-colors flex items-center group">
                   <span className="w-2 h-px bg-amber-500 mr-2 opacity-0 group-hover:opacity-100 transition-all"></span>
-                  Projects
+                  Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-zinc-400 hover:text-amber-500 text-sm transition-colors flex items-center group">
+                <Link href="#contact" className="text-zinc-400 hover:text-amber-500 text-sm transition-colors flex items-center group">
                   <span className="w-2 h-px bg-amber-500 mr-2 opacity-0 group-hover:opacity-100 transition-all"></span>
                   Contact
                 </Link>
