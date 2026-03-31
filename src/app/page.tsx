@@ -6,7 +6,7 @@ import { GridPattern, DotPattern } from "@/components/Patterns";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen selection:bg-amber-500/30 selection:text-amber-900">
+    <div className="flex flex-col min-h-screen selection:bg-amber-500/30 selection:text-amber-900 overflow-x-hidden">
       {/* Premium Hero Section */}
       <section id="home" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-zinc-950">
         {/* Background Image with Overlay */}
@@ -50,7 +50,7 @@ export default function Home() {
             </FadeIn>
             <FadeIn delay={0.3} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
-                href="#contact"
+                href="/contact"
                 className="group relative inline-flex items-center justify-center px-6 py-3.5 text-sm font-bold text-zinc-900 bg-amber-500 rounded-lg overflow-hidden transition-all hover:bg-amber-400 hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto shadow-[0_0_30px_-10px_rgba(245,158,11,0.5)]"
               >
                 <span className="relative z-10 flex items-center">
@@ -91,7 +91,7 @@ export default function Home() {
               <h3 className="font-sans text-3xl md:text-5xl font-black tracking-tight text-zinc-900 leading-tight">Comprehensive Solutions</h3>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <Link href="#contact" className="inline-flex items-center text-sm text-zinc-900 font-bold hover:text-amber-600 transition-colors group">
+              <Link href="/contact" className="inline-flex items-center text-sm text-zinc-900 font-bold hover:text-amber-600 transition-colors group">
                 Discuss Your Project <ArrowUpRight className="ml-2 w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Link>
             </FadeIn>
@@ -99,10 +99,10 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Home Remodeling", icon: <Hammer className="w-5 h-5" />, desc: "Complete interior and exterior transformations tailored to your lifestyle.", img: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" },
-              { title: "Renovation", icon: <Wrench className="w-5 h-5" />, desc: "Modern updates for kitchens, baths, and living areas with premium finishes.", img: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80" },
-              { title: "Structural Work", icon: <Shield className="w-5 h-5" />, desc: "Foundation, framing, and structural integrity repairs you can trust.", img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" },
-              { title: "Repairs", icon: <CheckCircle2 className="w-5 h-5" />, desc: "Reliable maintenance and structural repairs to protect your investment.", img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" },
+              { title: "Home Remodeling", icon: <Hammer className="w-5 h-5" />, desc: "Complete interior and exterior transformations tailored to your lifestyle.", img: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80", href: "/services" },
+              { title: "Renovation", icon: <Wrench className="w-5 h-5" />, desc: "Modern updates for kitchens, baths, and living areas with premium finishes.", img: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80", href: "/services" },
+              { title: "Structural Work", icon: <Shield className="w-5 h-5" />, desc: "Foundation, framing, and structural integrity repairs you can trust.", img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80", href: "/services" },
+              { title: "Repairs", icon: <CheckCircle2 className="w-5 h-5" />, desc: "Reliable maintenance and structural repairs to protect your investment.", img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80", href: "/services" },
             ].map((service, index) => (
               <FadeIn key={index} delay={index * 0.1} className="group relative bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-zinc-200/60 flex flex-col h-full">
                 <div className="relative h-48 overflow-hidden">
@@ -117,9 +117,9 @@ export default function Home() {
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <p className="text-zinc-500 leading-relaxed flex-grow text-sm">{service.desc}</p>
-                  <div className="mt-6 flex items-center text-amber-600 text-xs font-bold uppercase tracking-widest group-hover:text-amber-500 transition-colors">
+                  <Link href={service.href} className="mt-6 flex items-center text-amber-600 text-xs font-bold uppercase tracking-widest group-hover:text-amber-500 transition-colors">
                     Learn more <ArrowRight className="ml-2 w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                  </div>
+                  </Link>
                 </div>
               </FadeIn>
             ))}
@@ -241,7 +241,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 md:py-32 bg-white relative">
+      <section id="contact" className="py-24 md:py-32 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <FadeIn direction="right" className="flex flex-col justify-center">

@@ -8,10 +8,11 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Services", href: "#services" },
-  { name: "About", href: "#about" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Contact", href: "#contact" },
+  { name: "Services", href: "/services" },
+  { name: "About", href: "/about" },
+  { name: "Projects", href: "/projects" },
+  { name: "Testimonials", href: "/#testimonials" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export function Navbar() {
@@ -106,10 +107,10 @@ export function Navbar() {
 
       {/* Mobile Nav */}
       <div className={cn(
-        "md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-lg border-b border-zinc-100 shadow-2xl transition-all duration-300 overflow-hidden origin-top",
-        isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+        "md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-lg border-b border-zinc-100 shadow-2xl transition-all duration-300 overflow-y-auto origin-top",
+        isOpen ? "max-h-[calc(100vh-4rem)] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
       )}>
-        <div className="px-4 py-6 space-y-2">
+        <div className="px-4 py-6 space-y-2 pb-24">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -125,7 +126,7 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <div className="pt-4">
+          <div className="pt-4 mt-4 border-t border-zinc-100">
             <a
               href="tel:4043889408"
               className="flex items-center justify-center w-full px-4 py-3 text-base font-bold uppercase tracking-wide text-white bg-zinc-900 hover:bg-amber-500 transition-colors rounded-lg"

@@ -35,8 +35,8 @@ export function PageHeader({ title, description, children, bgImage }: PageHeader
         </>
       )}
       
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center justify-center w-full">
+        <div className="max-w-4xl mx-auto text-center w-full">
           <FadeIn>
             <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight font-serif">{title}</h1>
           </FadeIn>

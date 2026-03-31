@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-zinc-50">
+    <div className="min-h-screen bg-zinc-50 overflow-x-hidden">
       <PageHeader 
         title="About WYJ Logistics" 
         description="Dedicated to transforming homes in Atlanta with uncompromising quality, integrity, and master craftsmanship."
@@ -19,7 +19,7 @@ export default function AboutPage() {
       />
 
       {/* Introduction & Owner */}
-      <section className="py-32 bg-white">
+      <section className="py-32 bg-white overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <FadeIn direction="right">

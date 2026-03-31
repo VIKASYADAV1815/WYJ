@@ -48,14 +48,14 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <PageHeader 
         title="Our Expertise" 
         description="Master remodeling and renovation services for residential structures. Quality craftsmanship you can trust."
         bgImage="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=80"
       />
 
-      <section className="py-32 relative">
+      <section className="py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
           <GridPattern />
         </div>

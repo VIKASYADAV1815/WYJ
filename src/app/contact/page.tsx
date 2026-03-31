@@ -11,14 +11,14 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-zinc-50">
+    <div className="min-h-screen bg-zinc-50 overflow-x-hidden">
       <PageHeader 
         title="Start Your Project" 
         description="Ready to elevate your home? We're here to bring your vision to life with uncompromising quality."
         bgImage="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=2000&q=80"
       />
 
-      <section className="py-32">
+      <section className="py-32 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
             {/* Contact Info */}

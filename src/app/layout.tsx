@@ -62,16 +62,18 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`scroll-smooth ${sans.variable} ${serif.variable}`} suppressHydrationWarning>
-      <body className="font-sans min-h-screen flex flex-col antialiased text-zinc-950 bg-white selection:bg-amber-500/30 selection:text-amber-900 overflow-x-hidden w-full" suppressHydrationWarning>
+      <body className="font-sans min-h-screen flex flex-col antialiased text-zinc-950 bg-white selection:bg-amber-500/30 selection:text-amber-900 w-full" suppressHydrationWarning>
         <Script
           id="schema-org"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
-        <MobileStickyCall />
+        <div className="flex flex-col min-h-screen overflow-x-hidden w-full relative">
+          <Navbar />
+          <main className="flex-grow w-full">{children}</main>
+          <Footer />
+          <MobileStickyCall />
+        </div>
       </body>
     </html>
   );
